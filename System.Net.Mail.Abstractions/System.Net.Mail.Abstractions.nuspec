@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>System.Net.Mail.Abstractions</id>
+    <version>$version$</version>
+    <title>System.Net.Mail.Abstractions</title>
+    <authors>Gavyn Riebau</authors>
+    <owners>Gavyn Riebau</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/gavynriebau/System.Net.Mail.Abstractions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Small and simple abstraction around System.Net.Mail.SmtpClient that allows for mocking</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>SmtpClient System.Net.Mail Abstraction Mock Fake</tags>
+  </metadata>
+</package>

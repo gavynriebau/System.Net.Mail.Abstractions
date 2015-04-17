@@ -60,3 +60,26 @@ public class MyClass
    }
 }
 ```
+
+# Test
+
+```csharp
+[TestFixture]
+public class MyClassTests
+{
+    [Test]
+    public void MyClass_WhenSomeCondition_SendsEmail()
+    {
+        // Arrange.
+        var smtpClient = Substitute.For<ISmtpClient>(); // Using NSubstitute to create a mock of ISmtpClient.
+        var sut = new MyClass(smtpClient);              // Pass in the mocked class
+
+        // Act.
+        sut.DoSomethingThenSendEmail();
+
+        // Assert.
+        // Ensure ISmtpClient.Send was called
+        smtpClient.Received(1).Send("alerts@thesystem.com", "manager@thesystem.com", "Extreme warning", Arg.Any<string>());
+    }
+}
+```

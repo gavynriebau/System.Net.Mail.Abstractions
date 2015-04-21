@@ -12,6 +12,6 @@
     <description>Small and simple abstraction around System.Net.Mail.SmtpClient that allows for mocking</description>
     <releaseNotes>Initial release</releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <tags>SmtpClient System.Net.Mail Abstraction Mock Fake</tags>
+    <tags>SMTP SmtpClient System.Net.Mail Abstraction Mock Fake Test UnitTest</tags>
   </metadata>
 </package>

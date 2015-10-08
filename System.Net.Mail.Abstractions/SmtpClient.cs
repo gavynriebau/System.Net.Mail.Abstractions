@@ -159,7 +159,7 @@ namespace System.Net.Mail.Abstractions
             }
         }
 
-        public event SendCompletedEventHandler SendCompleted
+        public virtual event SendCompletedEventHandler SendCompleted
         {
             add
             {
@@ -171,37 +171,37 @@ namespace System.Net.Mail.Abstractions
             }
         }
 
-        public void Send(MailMessage message)
+        public virtual void Send(MailMessage message)
         {
             _smtpClient.Send(message);
         }
 
-        public void Send(string from, string recipients, string subject, string body)
+        public virtual void Send(string from, string recipients, string subject, string body)
         {
             _smtpClient.Send(from, recipients, subject, body);
         }
 
-        public void SendAsync(MailMessage message, object userToken)
+        public virtual void SendAsync(MailMessage message, object userToken)
         {
             _smtpClient.SendAsync(message, userToken);
         }
 
-        public void SendAsync(string from, string recipients, string subject, string body, object userToken)
+        public virtual void SendAsync(string from, string recipients, string subject, string body, object userToken)
         {
             _smtpClient.SendAsync(from, recipients, subject, body, userToken);
         }
 
-        public void SendAsyncCancel()
+        public virtual void SendAsyncCancel()
         {
             _smtpClient.SendAsyncCancel();
         }
 
-        public Task SendMailAsync(MailMessage message)
+        public virtual Task SendMailAsync(MailMessage message)
         {
             return _smtpClient.SendMailAsync(message);
         }
 
-        public Task SendMailAsync(string from, string recipients, string subject, string body)
+        public virtual Task SendMailAsync(string from, string recipients, string subject, string body)
         {
             return _smtpClient.SendMailAsync(from, recipients, subject, body);
         }

@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/gavynriebau/System.Net.Mail.Abstractions</RepositoryUrl>
 
     <PackageTags>SmtpClient,TDD,mock,mail</PackageTags>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
   </PropertyGroup>
   
 </Project>

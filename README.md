@@ -4,8 +4,6 @@ System.Net.Mail.Abstractions
 Inspired by System.IO.Abstractions and System.Configuration.Abstractions comes System.Net.Mail.Abstractions.
 A small and simple abstraction around SmtpClient to help you write TDD focused code.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/pgc4qo4v4h1fphk7?svg=true)](https://ci.appveyor.com/project/gavynriebau/system-net-mail-abstractions)
-
 # Install
 
 	PM> Install-Package System.Net.Mail.Abstractions
